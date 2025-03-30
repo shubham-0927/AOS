@@ -1,0 +1,20 @@
+ cat < in.txt | wc -l > lines.txt
+ls | grep '\.txt$' > out.txt 
+ cat < in.txt | wc -l > lines.txt
+ls | grep \.txt$ > out.txt
+ls | grep \.txt$ > out.txt
+ls | grep '\.txt$' > out.txt 
+ cat < in.txt | wc -l > lines.txt
+gedit &
+pinfo 6695
+pinfo 6695
+pinfo 6125
+gedit
+pinfo 6771
+history
+history 3
+exit
+cd abc
+echo "sfr"
+pwd
+exit
