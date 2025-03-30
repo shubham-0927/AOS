@@ -1,0 +1,77 @@
+client:
+g++ client.cpp -o client -lpthread -lssl -lcrypto
+./client 127.0.0.5:8080 tracker_info.txt
+
+tracker:
+g++ tracker.cpp -o tracker -lpthread
+./tracker tracker_info.txt 1
+
+-lssl
+-lcrypto
+
+
+
+
+
+
+    😃 Happy
+    😢 Sad
+    😡 Angry
+    😎 Cool
+    🤔 Thinking
+
+Server Roles:
+
+    👑 Admin
+    🛡️ Moderator
+    🧑‍💻 Developer
+    🎨 Designer
+    🎮 Gamer
+
+Status Indicators:
+
+    🟢 Online
+    🔴 Offline
+    🟡 Idle
+    🔵 Do Not Disturb
+
+Reactions:
+
+    👍 Thumbs Up
+    👎 Thumbs Down
+    ❤️ Love
+    😂 Laugh
+    😮 Surprised
+
+    ✅ Completed tasks
+    🔄 In progress
+    ❌ Not started
+    📅 Scheduled
+    🕒 Time-sensitive
+    🔥 High priority
+    📝 Notes
+    📈 Progress
+    💡 Ideas
+    🎯 Goals
+    
+    
+    
+    "File: " + file_name + "\nFile Size: " + to_string(file.file_size) +
+               "\nHash: " + file.file_hash + "\nUsers with file:\n";
+               for (const auto& [user, pieces] : piece_info.user_pieces) {
+        if (node_comm_info.find(user) != node_comm_info.end()) {
+            const node_info& node = node_comm_info[user];
+            response += "User: " + user + " (" + node.node_ip + ":" + to_string(node.node_port) + "\n";
+            response += "Pieces: ";
+            for (int piece_num : pieces) {
+                response += to_string(piece_num) + " ";
+            }
+            response += "\n";
+        }
+    }
+               
+               
+               
+               
+               
+
